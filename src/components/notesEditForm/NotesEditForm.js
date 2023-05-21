@@ -39,6 +39,17 @@ const NotesEditForm = () => {
             date: editNote.date
         }
 
+        if(!noteTitle) {
+            document.getElementById('add_title').classList.add('red');
+            return;
+        } else if(!noteDescr) {
+            document.getElementById('add_descr').classList.add('red');
+            return;
+        } if(!noteColor) {
+            document.getElementById('dropbtn').classList.add('red');
+            return;
+        }
+
         updateNote(newNote).unwrap();
 
         dispatch(toggleModalEdit());
@@ -46,6 +57,9 @@ const NotesEditForm = () => {
         setNoteTitle('');
         setNoteDescr('');
         setNoteColor('');
+        document.getElementById('add_title').classList.remove('red');
+        document.getElementById('add_descr').classList.remove('red');
+        document.getElementById('dropbtn').classList.remove('red');
     }
 
     const renderFilters = (filters, status) => {
@@ -88,12 +102,13 @@ const NotesEditForm = () => {
                         className="add_title"
                         placeholder="Add title..."
                         name="title"
+                        id='add_title'
                         value={noteTitle}
                         onChange={(e) => setNoteTitle(e.target.value)}>
                     </input>
                     <div className="add_dropdown">
                         <div className="propbtn_wrapper">
-                            <button className="dropbtn">{currentColor}</button>
+                            <button className="dropbtn" id='dropbtn'>{currentColor}</button>
                             <i className='fa fa-caret-down'></i>
                         </div>
                         <div className="dropdown_content">
@@ -107,6 +122,7 @@ const NotesEditForm = () => {
                     className="add_descr"
                     placeholder="Add description..."
                     name="descr"
+                    id='add_descr'
                     value={noteDescr}
                         onChange={(e) => setNoteDescr(e.target.value)}>
                 </textarea>
@@ -120,7 +136,7 @@ const NotesEditForm = () => {
                 <button 
                     className="add_add" 
                     type='submit'>
-                        ADD
+                        EDIT
                 </button>
         </form>
         </>

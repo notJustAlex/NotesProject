@@ -22,6 +22,18 @@ const NotesAddForm = () => {
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
+
+        if(!noteTitle) {
+            document.querySelector('.add_title').classList.add('red');
+            return;
+        } else if(!noteDescr) {
+            document.querySelector('.add_descr').classList.add('red');
+            return;
+        } if(!noteColor) {
+            document.querySelector('.dropbtn').classList.add('red');
+            return;
+        }
+
         const newNote = {
             id: uuidv4,
             title: noteTitle,
@@ -38,6 +50,9 @@ const NotesAddForm = () => {
         setNoteTitle('');
         setNoteDescr('');
         setNoteColor('');
+        document.querySelector('.add_title').classList.remove('red');
+        document.querySelector('.add_descr').classList.remove('red');
+        document.querySelector('.dropbtn').classList.remove('red');
     }
 
     const  getDate = () => {

@@ -130,7 +130,7 @@
     border: none;
     background: #F4F4F4;
     border-radius: 6px;
-    font-size: 14px;
+    font-size: 16px;
     text-align: left;
     margin-top: 28px;
     padding: 16px 16px;
@@ -162,7 +162,7 @@
     text-transform: uppercase;
     color: #2196F3;
     border: none;
-    left: 90%;
+    left: 86%;
     cursor: pointer;
     font-weight: 500;
     background-color: #fff;
