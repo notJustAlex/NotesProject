@@ -1,0 +1,34 @@
+{
+  "notes": [
+    {
+      "title": "cvbg ",
+      "description": "fghng",
+      "color": "Work",
+      "cross": false,
+      "date": "21 May, 2023",
+      "id": 1
+    }
+  ],
+  "filters": [
+    {
+      "id": "All",
+      "name": "All",
+      "className": "btn-outline-primary All"
+    },
+    {
+      "id": "Home",
+      "name": "Home",
+      "className": "btn-outline-primary Home"
+    },
+    {
+      "id": "Work",
+      "name": "Work",
+      "className": "btn-outline-primary Work"
+    },
+    {
+      "id": "Personal",
+      "name": "Personal",
+      "className": "btn-outline-primary Personal"
+    }
+  ]
+}

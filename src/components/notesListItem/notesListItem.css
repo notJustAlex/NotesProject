@@ -1,0 +1,110 @@
+.notes_box {
+    display: inline-block;
+    position: relative;
+    width: 395px;
+    height: 174px;
+    padding: 14px 14px 16px 16px;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 4px;
+    margin: 8px;
+    word-wrap: break-word;
+}
+
+.notes_box_top {
+    display: flex;
+}
+
+.notes_box_title {
+    color: #fff;
+    font-size: 20px;
+    text-align: top;
+}
+
+.notes_box_checkbox {
+    margin-top: 7px;
+    margin-right: 22px;
+    color: #fff;
+    width: 18px;
+    height: 18px;
+}
+
+.form-check-input:checked {
+    opacity: 0.6;
+    background-color: #000;
+    border-color: #fff;
+}
+
+.notes_box_icon_pencil {
+    position: absolute;
+    right: 48px;
+    border: none;
+    margin-top: 4px;
+    padding: 0;
+}
+
+.notes_box_icon_trash {
+    position: absolute;
+    margin-top: 4px;
+    right: 14px;
+    border: none;
+    padding: 0;
+}
+
+.notes_box_descr {
+    color: #FFFFFF;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.notes_box_date {
+    position: absolute;
+    bottom: 16px;
+    opacity: 0.6;
+    color: #FFFFFF;
+    font-size: 16px;
+}
+
+.cross {
+    text-decoration: line-through;
+    background-color: #282e2999;
+}
+
+.cross button {
+    background-color: grey;
+}
+
+.activ {
+    display: flex;
+}
+
+.aprovmantDelete h2 {
+    color: #00000099;
+    font-size: 20px;
+}
+
+.aprovmantDelete button {
+    margin-top: 40px;
+    border: none;
+    background-color: #fff;
+    color: #03A9F4;
+    left: 50px;
+}
+
+.triangle {
+    position: relative;
+    left: -89px;
+    top: 133px;
+}
+  
+.triangle::before {
+    content: "";
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-top: 25px solid white;
+}

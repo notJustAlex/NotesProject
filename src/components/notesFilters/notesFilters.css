@@ -1,0 +1,133 @@
+.search {
+    display: flex;
+    position: relative;
+    height: 46px;
+    margin-top: 65px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+    color: #00000099;
+}
+
+.search input {
+    width: 100%;
+    padding-left: 50px;
+    border: none;
+}
+
+.search i {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.btn-group {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notes_filter_nav {
+    display: flex;
+    justify-content: space-between;
+    width: 430px;
+}
+
+.button_wrapper {
+    position: relative;
+}
+
+.Home {
+    background-color: #FF9100;
+}
+
+.Work {
+    background-color: #5C6BC0;
+}
+
+.Personal {
+    background-color: #66BB6A;
+}
+
+.btn {
+    display: block;
+    height: 36px;
+    width: 89px;
+    border: none;
+    border-radius: 6px;
+    color: #00000099;
+    background-color: #fff;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #69BCFF;
+}
+
+.btn-primary:hover, .btn-outline-primary:hover, .btn-primary{
+    background-color: #69BCFF;
+}
+
+.btn-primary.Home:hover, .btn-outline-primary.Home:hover, .btn-primary.Home{
+    background-color: #FF9100;
+}
+
+.btn-primary.Work:hover, .btn-outline-primary.Work:hover, .btn-primary.Work{
+    background-color: #5C6BC0;
+}
+
+.btn-primary.Personal:hover, .btn-outline-primary.Personal:hover, .btn-primary.Personal{
+    background-color: #66BB6A;
+}
+
+.dot {
+    position: absolute;
+    margin: 0 auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    top: 30px;
+    left: 42px;
+}
+
+.notes_add {
+    position: relative;
+    width: 130px;
+    height: 36px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    text-align: right;
+    padding-right: 15px;
+    background-color: #2196F3;
+}
+
+.notes_add_button {
+    background-color: #2196F3;
+    border-radius: 4px;
+    width: 130px;
+    height: 36px;
+    text-transform: uppercase;
+}
+
+.notes_new_plus::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: #fff;
+    top: 16px;
+    transition: 0.3s all;
+}
+
+.notes_new_plus::after {
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    content: '';
+    display: block;
+    height: 14px;
+    width: 2px;
+    background-color: #fff;
+    transition: 0.3s all;
+}

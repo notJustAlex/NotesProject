@@ -1,0 +1,32 @@
+.notes_wrapper {
+    margin-top: 24px;
+}
+
+.noNotesWrapper, .noNotesSearchWrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 116px;
+    height: 400px;
+}
+
+.noNotesWrapper h2, .noNotesSearchWrapper h2{
+    display: block;
+    position: absolute;
+    color: #00000099;
+    opacity: 0.6;
+    font-size: 34px;
+}
+
+.noNotes_bg, .noNotesSearch_bg{
+    position: absolute;
+    background: transparent url('../../assets/add-note-illustration.png') 0% 0% no-repeat padding-box;
+    margin-top: 75px;
+    width: 259px;
+    height: 258px;
+}
+
+.noNotesSearch_bg {
+    background: transparent url('../../assets/search-image.png') 0% 0% no-repeat padding-box;
+}

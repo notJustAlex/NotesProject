@@ -1,0 +1,32 @@
+.app_info {
+    display: none;
+    position: relative;
+    margin-top: 55px;
+}
+
+.activ {
+    display: block;
+}
+
+.app_info h2 {
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    font-size: 24px;
+    color: #00000099;
+}
+
+.app_info_divider {
+    background-color: #2196F3;
+    height: 4px;
+    z-index: 5;
+    transition: 0.3s all;
+}
+
+.app_info_divider_full {
+    width: 825px;
+    height: 4px;
+    background-color: #2196F3;
+    opacity: 0.24;
+    z-index: 4;
+}
