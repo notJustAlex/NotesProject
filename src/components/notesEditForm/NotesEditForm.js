@@ -30,14 +30,6 @@ const NotesEditForm = () => {
 
     const onSubmitHandler = (e) => {
         e.preventDefault();
-        const newNote = {
-            id: editNote.id,
-            title: noteTitle,
-            description: noteDescr,
-            color: noteColor,
-            cross: editNote.cross,
-            date: editNote.date
-        }
 
         if(!noteTitle) {
             document.getElementById('add_title').classList.add('red');
@@ -50,7 +42,7 @@ const NotesEditForm = () => {
             return;
         }
 
-        updateNote(newNote).unwrap();
+        updateNote({...editNote, title: noteTitle, description: noteDescr, color: noteColor}).unwrap();
 
         dispatch(toggleModalEdit());
         

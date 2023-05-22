@@ -58,6 +58,7 @@
     border: none;
     padding-left: 16px;
     color: rgb(58, 58, 58);
+    border-radius: 6px;
 }
 
 .add_dropdown {
@@ -87,6 +88,10 @@
     font-size: 15px;
     padding: 10px;
     color: rgb(58, 58, 58);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .dropdown_content {
@@ -95,6 +100,7 @@
     width: 100%;
     font-size: 15px;
     color: rgb(58, 58, 58);
+    border-radius: 6px;
 }
 
 .dropdown_content button {
@@ -107,6 +113,11 @@
     display: block;
     cursor: pointer;
     font-size: 15px;
+}
+
+.dropdown_content button:last-child {
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
 
 .dropdown_content button:hover {
@@ -122,6 +133,10 @@
 .add_dropdown:hover .dropbtn {
     background-color: #F4F4F4;
 }
+.dropbtn:hover {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
 
 .add_descr {
     margin-left: 34px;
@@ -135,6 +150,7 @@
     margin-top: 28px;
     padding: 16px 16px;
     resize: none;
+    border-radius: 6px;
 }
 
 .add_cancel {
