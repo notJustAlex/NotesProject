@@ -26,10 +26,7 @@ const NotesAddForm = () => {
         if(!noteTitle) {
             document.querySelector('.add_title').classList.add('red');
             return;
-        } else if(!noteDescr) {
-            document.querySelector('.add_descr').classList.add('red');
-            return;
-        } if(!noteColor) {
+        } else if(!noteColor) {
             document.querySelector('.dropbtn').classList.add('red');
             return;
         }
@@ -51,7 +48,6 @@ const NotesAddForm = () => {
         setNoteDescr('');
         setNoteColor('');
         document.querySelector('.add_title').classList.remove('red');
-        document.querySelector('.add_descr').classList.remove('red');
         document.querySelector('.dropbtn').classList.remove('red');
     }
 
