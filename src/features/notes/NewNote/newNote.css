@@ -1,0 +1,231 @@
+.note_form {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	background-color: var(--bg-white);
+	z-index: 10000;
+	width: 540px;
+	border-radius: 8px;
+	box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.note_form .title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	padding-top: 10px;
+
+	color: var(--text-black);
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+}
+
+.note_form .divider {
+	margin: 20px 0;
+}
+
+.note_form .text_wrapper input {
+	box-sizing: border-box;
+	width: 507px;
+	height: 56px;
+	padding: 8px 12px;
+	margin-top: 5px;
+	border-radius: 6px;
+	background-color: var(--bg-light-gray-1);
+	border: 1px solid var(--bg-light-gray-5);
+
+	font-size: 16px;
+	column-count: auto;
+	font-weight: 500;
+	color: var(--text-black);
+	font-family: inherit;
+}
+
+.note_form .dropdown_wrapper {
+	margin-top: 20px;
+}
+
+.note_form .dropdown_wrapper .dropdown_title {
+	font-size: 15px;
+	column-count: auto;
+	font-weight: 500;
+	color: var(--text-black);
+	font-family: inherit;
+}
+
+.note_form .dropdown {
+	position: relative;
+	display: inline-block;
+	margin-top: 10px;
+	font-size: 15px;
+	transition: 0.3s all;
+	border-radius: 10px;
+}
+
+.note_form .dropdown svg {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	right: 15px;
+	bottom: 50%;
+	transform: translateY(50%);
+	fill: var(--text-black);
+}
+.note_form .dropdown:hover svg {
+	transition: 0.3s all;
+	transform: rotate(180deg) translateY(-5px);
+}
+
+.note_form .dropdown_button {
+	width: 507px;
+	height: 56px;
+	background-color: var(--bg-light-gray-1);
+	text-align: left;
+	font-size: 16px;
+	color: var(--text-black);
+	line-height: 20px;
+	font-weight: 400;
+	border-radius: 6px;
+	cursor: pointer;
+	border: 1px solid var(--bg-light-gray-5);
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+}
+.note_form .dropdown_button:hover {
+	border: 1px solid #65676b;
+}
+.note_form .dropdown_button:focus {
+	border: 1px solid #0866ff;
+}
+.note_form .dropdown_button span {
+	display: block;
+	font-size: 12px;
+	opacity: 0.8;
+}
+.note_form .dropdown_button:focus span {
+	color: #0866ff;
+}
+
+.note_form .dropdown_content {
+	display: none;
+	position: absolute;
+	width: 100%;
+	box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+}
+.note_form .dropdown:hover .dropdown_content {
+	display: block;
+}
+
+.note_form .dropdown_content button {
+	width: 100%;
+	text-align: left;
+	color: var(--text-black);
+	padding: 12px 16px;
+	text-decoration: none;
+	border: none;
+	display: block;
+	cursor: pointer;
+	font-size: 15px;
+	background-color: var(--bg-white);
+}
+.note_form .dropdown_content button:hover {
+	background-color: var(--bg-light-gray-1);
+}
+.note_form .dropdown_content button span {
+	display: block;
+	font-size: 13px;
+	opacity: 0.8;
+}
+.note_form .dropdown_content button:last-child {
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.note_form .text_wrapper {
+	margin-top: 16px;
+}
+
+.note_form .text_wrapper span {
+	font-size: 15px;
+	column-count: auto;
+	font-weight: 500;
+	color: var(--text-black);
+	font-family: inherit;
+}
+
+.note_form .text_wrapper textarea {
+	resize: none;
+	box-sizing: border-box;
+	width: 507px;
+	height: 98px;
+	padding: 8px 12px;
+	margin-top: 5px;
+	border-radius: 6px;
+	background-color: var(--bg-light-gray-1);
+	border: 1px solid var(--bg-light-gray-5);
+
+	font-size: 15px;
+	column-count: auto;
+	font-weight: 500;
+	color: var(--text-black);
+	font-family: inherit;
+}
+
+.note_form .descr {
+	margin-top: 16px;
+	font-weight: 400;
+	font-size: 15px;
+	color: #050505;
+	font-family: inherit;
+	background-color: #e4e6eb;
+	line-height: 16px;
+	width: 100%;
+	border-radius: 8px;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.note_form .buttons {
+	margin-top: 16px;
+	display: flex;
+	justify-content: end;
+}
+
+.note_form .buttons .submit,
+.note_form .buttons .cancel {
+	height: 36px;
+	box-sizing: border-box;
+	padding: 0 12px;
+	border: none;
+	border-radius: 6px;
+	color: #0866ff;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 19px;
+	font-family: inherit;
+	cursor: pointer;
+	background-color: var(--bg-white);
+}
+
+.note_form .buttons .submit:hover,
+.note_form .buttons .cancel:hover {
+	filter: brightness(0.94);
+}
+
+.note_form .buttons .submit {
+	padding: 0 30px;
+	background-color: #0866ff;
+	color: var(--text-white);
+	margin-left: 10px;
+}
+
+.note_form .buttons .submit:disabled {
+	background-color: inherit;
+	color: #bcc0c4;
+}

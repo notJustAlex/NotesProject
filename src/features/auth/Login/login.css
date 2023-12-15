@@ -1,0 +1,78 @@
+.login {
+	display: inline-block;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	width: 396px;
+	background-color: var(--bg-white);
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+
+.login input {
+	width: 330px;
+	height: 22px;
+	border-radius: 6px;
+	border: 1px solid var(--bg-light-gray-4);
+	font-size: 17px;
+	padding: 14px 16px;
+	margin: 6px 16px;
+	background-color: var(--bg-light-gray-4);
+	color: var(--text-black);
+}
+
+.login input:focus {
+	border-color: #1877f2;
+	box-shadow: rgba(24, 118, 242, 0.2) 0 0 0 3px inset;
+	outline: none;
+}
+
+.login .singin_button {
+	padding: 0 16px;
+	width: 364px;
+	height: 48px;
+	border-radius: 6px;
+	color: var(--text-white);
+	font-size: 20px;
+	background-color: #1877f2;
+	border: none;
+	cursor: pointer;
+	line-height: 48px;
+	margin: 8px 16px;
+}
+
+.err_message {
+	margin: 10px;
+	text-align: center;
+	color: #f02849;
+}
+
+.login a {
+	color: #1877f2;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.login .link_wrapper {
+	text-align: center;
+	margin: 15px 0;
+}
+
+.divider {
+	align-items: center;
+	display: flex;
+	margin: 20px 16px;
+	text-align: center;
+}
+
+.create_account_button {
+	border: none;
+	border-radius: 6px;
+	font-size: 17px;
+	line-height: 48px;
+	padding: 0 16px;
+	background-color: #42b72a;
+	color: var(--text-white);
+	margin: 0 106px;
+	cursor: pointer;
+}

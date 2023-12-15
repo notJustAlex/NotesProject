@@ -1,0 +1,45 @@
+.spinner_wrapper {
+	display: flex;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 70px);
+	background-color: var(--bg-white);
+	border-radius: 100%;
+	width: 52px;
+	height: 52px;
+	align-items: center;
+	justify-content: center;
+	z-index: 100000;
+}
+
+.spinner-enter {
+	transform: translate(-50%, 0);
+	opacity: 0;
+}
+.spinner-enter-active {
+	transform: translate(-50%, 70px);
+	opacity: 1;
+	transition: all 500ms;
+}
+
+.spinner-exit {
+	transform: translate(-50%, 70px);
+	opacity: 1;
+}
+.spinner-exit-active {
+	opacity: 0;
+	transform: translate(-50%, 0);
+	transition: all 500ms;
+}
+
+@keyframes react-spinners-ClipLoader-clip {
+	0% {
+		transform: rotate(0deg);
+	}
+	50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

@@ -1,0 +1,37 @@
+#theme_switcher {
+	background-color: var(--bg-light-gray-2);
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	gap: 1.33rem;
+	cursor: pointer;
+	padding: 0.595rem;
+	position: relative;
+	transition: var(--default-switcher-transition);
+}
+
+#theme_switcher:before {
+	content: "";
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	background-color: var(--highlight-yellow);
+	border-radius: 50px;
+	z-index: 0;
+	left: 0;
+	transform: translateX(var(--switch-circle-position));
+	transition: var(--default-switcher-transition);
+}
+
+#theme_switcher svg {
+	z-index: 10;
+	transition: var(--default-switcher-transition);
+}
+
+#icon_sun {
+	fill: var(--highlight-brown);
+}
+
+#icon_moon {
+	fill: var(--highlight-brown);
+}

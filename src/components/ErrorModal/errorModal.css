@@ -1,0 +1,43 @@
+.error_modal {
+	position: absolute;
+	top: 50%;
+	right: 50%;
+	transform: translate(50%, -50%);
+	background-color: var(--bg-white);
+	z-index: 10000;
+	width: 333px;
+	height: 190px;
+	border-radius: 8px;
+	box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.2), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.error_modal h3 {
+	text-align: center;
+	font-size: 20px;
+	margin-bottom: 0;
+}
+
+.error_modal p {
+	text-align: center;
+	opacity: 0.8;
+}
+
+.error_modal button {
+	display: block;
+	margin: 0 auto;
+	background-color: var(--bg-white);
+	border-radius: 8px;
+	border: 1px solid black;
+	padding: 4px 8px;
+	cursor: pointer;
+}
+
+.modal_blur {
+	position: absolute;
+	z-index: 1000;
+	height: 100vh;
+	width: 100vw;
+	backdrop-filter: blur(2px);
+}

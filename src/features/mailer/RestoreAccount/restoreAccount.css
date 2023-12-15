@@ -1,0 +1,225 @@
+.identify {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.identify_form,
+.confirmation_form,
+.accses_form {
+	border: none;
+	border-radius: 8px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin: auto;
+	width: 500px;
+	background-color: var(--bg-white);
+	box-sizing: border-box;
+}
+
+.identify_form .title,
+.confirmation_form .title,
+.accses_form .title {
+	font-size: 20px;
+	line-height: 24px;
+	margin-top: -15px;
+	padding: 18px 16px 18px 18px;
+	font-weight: 600;
+	margin: 0;
+	color: var(--text-black);
+}
+
+.identify_form .wrapper,
+.confirmation_form .wrapper,
+.accses_form .wrapper {
+	margin: 16px;
+	padding: 0;
+}
+
+.identify_form .descr,
+.confirmation_form .descr,
+.accses_form .descr {
+	font-size: 17px;
+	line-height: 20px;
+	margin-bottom: 16px;
+	color: var(--text-black);
+}
+
+.identify_form input,
+.confirmation_form .input_wrapper input,
+.accses_form input {
+	border-radius: 6px;
+	font-size: 16px;
+	height: auto;
+	margin-bottom: 0;
+	padding: 16px 0 16px 16px;
+	width: 444px;
+	border: 1px solid var(--bg-light-gray-4);
+	margin: 0;
+	background-color: var(--bg-white);
+	color: var(--text-black);
+}
+
+.confirmation_form .input_wrapper {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	height: 52px;
+}
+
+.confirmation_form .input_wrapper input {
+	width: 50%;
+}
+
+.accses_form input {
+	box-sizing: border-box;
+	width: 100%;
+	padding-right: 16px;
+}
+
+.confirmation_form .input_wrapper div {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 20px;
+	max-width: 45%;
+	padding-left: 12px;
+	word-wrap: break-word;
+	color: var(--text-white);
+}
+
+.confirmation_form .input_wrapper div span {
+	font-size: 13px;
+	line-height: 16px;
+	text-align: left;
+}
+
+.identify_form .buttons,
+.confirmation_form .buttons,
+.accses_form .buttons {
+	border-radius: 0 0 8px 8px;
+	padding: 16px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.confirmation_form .buttons .link {
+	color: #1877f2;
+	font-size: 13px;
+	line-height: 29px;
+	cursor: pointer;
+	padding: 2px 0;
+}
+
+.identify_form .buttons button,
+.confirmation_form button,
+.accses_form button {
+	padding: 0 20px;
+	background-color: #e4e6eb;
+	border: none;
+	border-radius: 6px;
+	font-size: 15px;
+	line-height: 36px;
+	margin-left: 8px;
+	cursor: pointer;
+	color: #4b4f56;
+	font-weight: 700;
+}
+
+.identify_form .buttons .submit,
+.confirmation_form .buttons .submit,
+.accses_form .submit {
+	background-color: #1877f2;
+	color: var(--text-white);
+}
+
+.identify_form .divider,
+.confirmation_form .divider,
+.accses_form .divider {
+	margin: 0;
+	width: 100%;
+}
+
+.identify_form .error,
+.confirmation_form .error,
+.accses_form .error {
+	margin-bottom: 16px;
+	padding: 12px;
+	background-color: #ffebe8;
+	border: 1px solid #dd3c10;
+}
+
+.identify_form .error p,
+.confirmation_form .error p,
+.accses_form .error p {
+	margin: 0;
+}
+
+.identify_form .error .error_title,
+.confirmation_form .error .error_title,
+.accses_form .error .error_title {
+	font-weight: 600;
+}
+
+.identify_form .error .error_descr,
+.confirmation_form .error .error_descr,
+.accses_form .error .error_descr {
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.identify_login {
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	background-color: var(--bg-white);
+}
+
+.identify_login .title {
+	text-align: center;
+	padding: 10px 20px;
+	color: #1877f2;
+	margin: 0;
+}
+
+.identify_login .wrapper {
+	padding: 0 16px;
+	box-sizing: border-box;
+	align-items: center;
+	margin: 6px;
+}
+
+.identify_login .wrapper input {
+	border-radius: 8px;
+	border: 1px solid var(--bg-light-gray-4);
+	height: 40px;
+	padding: 10px;
+	box-sizing: border-box;
+	margin: 0 5px;
+	background-color: var(--bg-light-gray-4);
+	color: var(--text-black);
+}
+
+.identify_login .wrapper button {
+	padding: 0 20px;
+	background-color: #1877f2;
+	margin: 0;
+	border: none;
+	border-radius: 6px;
+	font-size: 15px;
+	line-height: 36px;
+	margin-left: 8px;
+	cursor: pointer;
+	color: var(--text-white);
+	font-weight: 700;
+}
+
+.identify input:focus,
+.confirmation_form input:focus,
+.accses_form input:focus {
+	border-color: #1877f2;
+	box-shadow: rgba(24, 118, 242, 0.2) 0 0 0 3px inset;
+	outline: none;
+}

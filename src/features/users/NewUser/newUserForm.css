@@ -1,0 +1,96 @@
+.singup {
+	display: inline-block;
+	padding-bottom: 24px;
+	padding-top: 10px;
+	width: 396px;
+	background-color: var(--bg-white);
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box;
+}
+
+.singup .form_title {
+	font-size: 32px;
+	line-height: 38px;
+	margin: 0;
+	color: var(--text-black);
+	margin-left: 16px;
+}
+
+.singup .form_subtitle {
+	font-size: 15px;
+	line-height: 24px;
+	margin-bottom: 0;
+	opacity: 0.6;
+	margin: 0;
+	margin-left: 16px;
+	color: var(--text-black);
+}
+
+.singup .divider {
+	margin: 10px;
+}
+
+.singup input {
+	width: 330px;
+	height: 22px;
+	border-radius: 6px;
+	border: 1px solid var(--bg-light-gray-4);
+	font-size: 17px;
+	padding: 14px 16px;
+	margin: 6px 16px;
+	background-color: var(--bg-light-gray-4);
+	color: var(--text-black);
+}
+
+.singup .form_input_password {
+	padding-right: 20px;
+}
+
+.singup_button {
+	padding: 0 16px;
+	width: 364px;
+	height: 48px;
+	border-radius: 6px;
+	color: var(--text-white);
+	font-size: 20px;
+	background-color: #42b72a;
+	border: none;
+	cursor: pointer;
+	line-height: 48px;
+	margin: 8px 16px;
+}
+
+.singup .login_button {
+	border: none;
+	width: 184px;
+	border-radius: 6px;
+	font-size: 17px;
+	line-height: 48px;
+	padding: 0 16px;
+	background-color: #1877f2;
+	color: var(--text-white);
+	margin: 0 106px;
+	cursor: pointer;
+}
+
+.form_input_check_email {
+	transition: all 200ms linear;
+}
+
+.input_wrapper {
+	position: relative;
+}
+
+.error_icon {
+	position: absolute;
+	display: inline;
+	right: 25px;
+	top: 50%;
+	transform: translateY(-40%);
+	cursor: pointer;
+}
+
+.password_wrapper .error_icon {
+	right: 16px;
+}

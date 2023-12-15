@@ -1,0 +1,111 @@
+.verification_section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.verification_form {
+	background-color: var(--bg-white);
+	border-radius: 8px;
+	box-sizing: border-box;
+	width: 500px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.verification_form .divider {
+	margin: 0;
+}
+
+.verification_form h2 {
+	padding: 18px 16px;
+	margin: 0;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 24px;
+	color: var(--text-black);
+}
+
+.verification_descr {
+	margin-bottom: 20px;
+	margin-top: 16px;
+	padding: 0 16px;
+	color: var(--text-black);
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 19px;
+}
+
+.verification_descr span {
+	font-weight: bold;
+}
+
+.verification_form .input {
+	display: inline-block;
+	width: 137px;
+	margin-left: 16px;
+	padding: 18px 20px 18px 20px;
+	border: 1px solid var(--bg-light-gray-4);
+	border-radius: 6px;
+	box-sizing: border-box;
+	color: var(--text-black);
+	background-color: var(--bg-light-gray-4);
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.25;
+	text-align: inherit;
+	text-align: center;
+}
+
+.verification_form input:focus {
+	border-color: #1877f2;
+	box-shadow: rgba(24, 118, 242, 0.2) 0 0 0 3px inset;
+	outline: none;
+}
+
+.verification_link {
+	color: #1877f2;
+	font-size: 0.9375rem;
+	line-height: 36px;
+	margin: 10px 0 20px 16px;
+	cursor: pointer;
+}
+
+.verification_link:hover {
+	text-decoration: underline;
+}
+
+.verification_buttons {
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1);
+	padding: 12px 16px;
+}
+
+.verification_buttons div {
+	display: flex;
+	justify-content: space-between;
+	padding-left: 205px;
+}
+
+.verification_buttons button {
+	background-color: #ebedf0;
+	border: none;
+	border-radius: 6px;
+	color: #1c1e21;
+	font-size: 0.9375rem;
+	font-weight: 600;
+	height: 36px;
+	line-height: 36px;
+	overflow: hidden;
+	padding-left: 12px;
+	padding-right: 12px;
+	cursor: pointer;
+}
+
+.verification_buttons .continue {
+	background-color: #1877f2;
+	color: var(--text-white);
+}
+.verification_buttons .continue:disabled {
+	background-color: inherit;
+	color: #bec3c9;
+}
