@@ -7,7 +7,7 @@ import {
 import { setCredentials } from "../../features/auth/authSlice";
 
 const baseQuery = fetchBaseQuery({
-	baseUrl: "http://localhost:3500",
+	baseUrl: "https://notesproject-api.onrender.com",
 	credentials: "include",
 	prepareHeaders: (headers, { getState }: any) => {
 		const token = getState().auth.token;
